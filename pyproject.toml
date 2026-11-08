@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-bi"
+version = "0.1.0"
+description = "Servicio interno de machine learning del BI: entrena modelos por empresa sobre el esquema dw."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi==0.162.0",
+    "uvicorn==0.54.0",
+    "pandas==3.1.0",
+    "numpy==2.5.4",
+    "scipy==1.18.1",
+    "scikit-learn==1.9.1",
+    "statsmodels==0.15.0",
+    "mlxtend==0.25.0",
+    "sqlalchemy==2.1.6",
+    "psycopg==3.3.6",
+    "psycopg-binary==3.3.6",
+    "pydantic-settings==2.16.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "httpx==0.28.1",
+]
+
+[tool.setuptools]
+packages = ["app", "app.modelos"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

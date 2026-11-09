@@ -22,12 +22,12 @@ MINIMO_PRUEBA = 20
 
 VARIABLES = ["recencia_dias", "frecuencia", "monto", "ticket_promedio", "antiguedad_dias", "proporcion_online", "devoluciones"]
 ETIQUETAS = {
-    "recencia_dias": "Dias desde su ultima compra",
+    "recencia_dias": "Días desde su última compra",
     "frecuencia": "Cantidad de compras",
     "monto": "Monto total comprado",
     "ticket_promedio": "Ticket promedio",
-    "antiguedad_dias": "Dias desde su primera compra",
-    "proporcion_online": "Proporcion de compras en linea",
+    "antiguedad_dias": "Días desde su primera compra",
+    "proporcion_online": "Proporción de compras en línea",
     "devoluciones": "Devoluciones",
 }
 
